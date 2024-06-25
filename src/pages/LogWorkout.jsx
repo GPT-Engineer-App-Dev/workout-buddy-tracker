@@ -8,7 +8,9 @@ const LogWorkout = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Logic to handle workout logging
+    const workoutData = JSON.parse(localStorage.getItem("workoutData")) || [];
+    workoutData.push({ workoutType, duration, date });
+    localStorage.setItem("workoutData", JSON.stringify(workoutData));
     console.log({ workoutType, duration, date });
   };
 

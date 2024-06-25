@@ -23,6 +23,9 @@ const Index = () => {
           <Button as={Link} to="/log-workout" colorScheme="teal" variant="outline" size="lg">
             Log Workout
           </Button>
+          <Button as={Link} to="/progress" colorScheme="teal" variant="outline" size="lg">
+            View Progress
+          </Button>
         </Box>
       </VStack>
     </Container>
